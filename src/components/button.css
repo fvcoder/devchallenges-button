@@ -1,0 +1,73 @@
+:root {
+    --color: rgb(61, 90, 254);
+}
+
+.btn{
+    user-select: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20.27px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Variants */
+.btn-base {
+    color: #3F3F3F;
+    border-color: #E0E0E0;
+    background-color: #E0E0E0;
+}
+.btn-base:hover, .btn-base:focus {
+    color: #3F3F3F;
+    background-color: #AEAEAE;
+    border-color: #AEAEAE;
+}
+.btn-outline {
+    background: transparent;
+    border-color: var(--color);
+    color: var(--color);
+}
+
+.btn-outline:hover, .btn-outline:focus {
+    background-color: rgba(var(--color), 0.5)!important;
+}
+
+.btn-fill {}
+.btn-text {}
+
+.btn-sm {}
+.btn-md {
+    padding: 5.5px 16.3px;
+}
+.btn-lg {}
+
+.btn-shadow {
+    box-shadow: 0px 2px 3px 0px #33333333;
+}
+
+
+.button {
+    padding: 5.5px 16.3px;
+    
+    border-color: #E0E0E0;
+    color: #3F3F3F;
+    background-color: #E0E0E0;
+
+    
+}
+
+.button:hover, .button:focus {
+    color: #3F3F3F;
+    background-color: #AEAEAE;
+    border-color: #AEAEAE;
+}
+
+/* Dev only */
+.dev-focus {
+    color: #3F3F3F;
+    background-color: #AEAEAE;
+    border-color: #AEAEAE;
+}

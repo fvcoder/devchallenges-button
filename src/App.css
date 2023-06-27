@@ -1,0 +1,40 @@
+.title-box {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.title-box_text {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #090F31;
+}
+.title-box_span {
+  color: #F7542E;
+}
+
+.title-div {
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 1rem;
+}
+
+.h1 {
+  font-weight: 600;
+  line-height: 120%;
+  font-size: 1.75em;
+  color: #090F31;
+}
+
+.h2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
