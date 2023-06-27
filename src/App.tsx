@@ -9,7 +9,7 @@ function DiplayButton(props: DisplayButtonProps) {
   return (
     <div>
       <h2 className="h2 font-poppins">{props.text}</h2>
-      <Button {...props}>Button</Button>
+      <Button {...props}>Default</Button>
     </div>
   )
 }
@@ -20,12 +20,12 @@ function App() {
     { text: '&:hover, &:focus', manualFocus: true },
     null,
     null,
-    { text: '<Button variant=”outline” />', variant: "outline" },
-    { text: '&:hover, &:focus', variant: "outline" },
+    { text: '<Button variant=”outline” />', variant: "outline", color: "primary" },
+    { text: '&:hover, &:focus', variant: "outline", color: "primary", manualFocus: true },
     null,
     null,
-    { text: "<Button variant=”text” />", variant: "text" },
-    { text: "&:hover, &:focus", variant: "text" },
+    { text: "<Button variant=”text” />", variant: "text", color: "primary" },
+    { text: "&:hover, &:focus", variant: "text", color: "primary", manualFocus: true },
     null,
     null,
     { text: "<Button disableShadow />", variant: "fill", disableShadow: true, color: "primary" },
@@ -36,22 +36,22 @@ function App() {
     { text: "<Button variant=”text” disabled />", disabled: true, variant: "text" },
     null,
     null,
-    { text: "<Button startIcon=”local_grocery_store” />", startIcon: "local_grocery_store" },
-    { text: "<Button endIcon=”local_grocery_store” />", endIcon: "local_grocery_store" },
+    { text: "<Button startIcon=”local_grocery_store” />", startIcon: "local_grocery_store", color: "primary" },
+    { text: "<Button endIcon=”local_grocery_store” />", endIcon: "local_grocery_store", color: "primary" },
     null,
     null,
-    { text: "<Button size=”sm” />", size: "sm"},
-    { text: "<Button size=”md” />", size: "md"},
-    { text: "<Button size=”lg” />", size: "lg"},
+    { text: "<Button size=”sm” />", size: "sm", color: "primary" },
+    { text: "<Button size=”md” />", size: "md", color: "primary" },
+    { text: "<Button size=”lg” />", size: "lg", color: "primary" },
     null,
     { text: "<Button color=”default” />", color: "default" },
     { text: "<Button color=”primary” />", color: "primary" },
     { text: "<Button color=”secondary” />", color: "secondary" },
     { text: "<Button color=”danger” />", color: "danger" },
-    { text: "<Button color=”default” />", color: "default", manualFocus: true },
-    { text: "<Button color=”primary” />", color: "primary", manualFocus: true },
-    { text: "<Button color=”secondary” />", color: "secondary", manualFocus: true },
-    { text: "<Button color=”danger” />", color: "danger", manualFocus: true },
+    { text: "&:hover, &:focus", color: "default", manualFocus: true },
+    { text: "&:hover, &:focus", color: "primary", manualFocus: true },
+    { text: "&:hover, &:focus", color: "secondary", manualFocus: true },
+    { text: "&:hover, &:focus", color: "danger", manualFocus: true },
   ]
 
   return (
