@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://fvcoder.github.com/devchallenges-button">
+    <a href="https://fvcoder.github.io/devchallenges-button">
       Demo
     </a>
     <span> | </span>
