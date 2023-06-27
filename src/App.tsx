@@ -1,8 +1,9 @@
-import './App.css'
-import { Button, ButtonProps } from './components/button'
+import "./App.css";
+
+import { Button, ButtonProps } from "./components/button";
 
 interface DisplayButtonProps extends ButtonProps {
-  text: string
+  text: string;
 }
 
 function DiplayButton(props: DisplayButtonProps) {
@@ -11,17 +12,17 @@ function DiplayButton(props: DisplayButtonProps) {
       <h2 className="h2 font-poppins">{props.text}</h2>
       <Button {...props}>Default</Button>
     </div>
-  )
+  );
 }
 
 function App() {
   const buttonExamples: Array<DisplayButtonProps | null> = [
-    { text: '<Button />' },
-    { text: '&:hover, &:focus', manualFocus: true },
+    { text: "<Button />" },
+    { text: "&:hover, &:focus", manualFocus: true },
     null,
     null,
-    { text: '<Button variant=”outline” />', variant: "outline", color: "primary" },
-    { text: '&:hover, &:focus', variant: "outline", color: "primary", manualFocus: true },
+    { text: "<Button variant=”outline” />", variant: "outline", color: "primary" },
+    { text: "&:hover, &:focus", variant: "outline", color: "primary", manualFocus: true },
     null,
     null,
     { text: "<Button variant=”text” />", variant: "text", color: "primary" },
@@ -36,8 +37,16 @@ function App() {
     { text: "<Button variant=”text” disabled />", disabled: true, variant: "text" },
     null,
     null,
-    { text: "<Button startIcon=”local_grocery_store” />", startIcon: "local_grocery_store", color: "primary" },
-    { text: "<Button endIcon=”local_grocery_store” />", endIcon: "local_grocery_store", color: "primary" },
+    {
+      text: "<Button startIcon=”local_grocery_store” />",
+      startIcon: "local_grocery_store",
+      color: "primary",
+    },
+    {
+      text: "<Button endIcon=”local_grocery_store” />",
+      endIcon: "local_grocery_store",
+      color: "primary",
+    },
     null,
     null,
     { text: "<Button size=”sm” />", size: "sm", color: "primary" },
@@ -52,7 +61,7 @@ function App() {
     { text: "&:hover, &:focus", color: "primary", manualFocus: true },
     { text: "&:hover, &:focus", color: "secondary", manualFocus: true },
     { text: "&:hover, &:focus", color: "danger", manualFocus: true },
-  ]
+  ];
 
   return (
     <>
@@ -65,16 +74,18 @@ function App() {
           </a>
           <span className="title-box_text">+</span>
           <a href="https://github.com/fvcoder">
-            <p className="title-box_text"><span className="title-box_span">fv</span>coder</p>
+            <p className="title-box_text">
+              <span className="title-box_span">fv</span>coder
+            </p>
           </a>
         </div>
         <h1 className="h1 font-poppins">Button component</h1>
       </header>
       <main className="grid">
-        {buttonExamples.map((x, i) => x !== null ? <DiplayButton key={i} {...x} /> : <div />)}
+        {buttonExamples.map((x, i) => (x !== null ? <DiplayButton key={i} {...x} /> : <div />))}
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
